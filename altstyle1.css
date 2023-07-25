@@ -1,0 +1,50 @@
+html,body,div,span,iframe,h1,h2,h3,h4,p,pre,del,em,img,b,i,dl,dt,dd,ol,ul,li,form,table
+,tbody,tr,th,td,article,aside,footer,header,nav,section{margin:0;padding:0;border:0;out
+line:0;font-size:100%;vertical-align:baseline;background:transparent;box-sizing:border-
+box}
+article,aside,footer,header,nav,section{display:block}
+body{line-height:1;overflow-wrap:break-word;word-wrap:break-word}
+input,textarea,select{font-family:inherit;font-size:inherit;color:inherit;vertical-
+align:middle;box-sizing:border-box}
+a{margin:0;padding:0;text-decoration:none;outline:none;font-size:100%;vertical-
+align:baseline;background:transparent}
+a img{border-style:none}
+ul,li{list-style-type:none}
+.cf:before,.cf:after{content:" ";display:table}.cf:after{clear:both}
+/* ===================================
+背景,文字,リンク設定 =================================== */
+html{
+font-size:62.5%
+}
+body{
+background:#000;/* 背景色 */
+color:#fff;/* 文字色 */
+font-size:1.3em;/* 文字の大きさ */
+font-family:'Segoe UI','游ゴシック Medium','Yu Gothic Medium','游ゴシック体 ',YuGothic,'Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif; letter-spacing:.1em;
+line-height:1.5;
+padding:15px;
+text-align:center
+}
+/* リンク
+------------------------------ */
+a{
+color:inherit
+}
+#contents a,footer a{
+color:#ce0000
+}
+a:not(.bg-none):hover{
+border-bottom:1px solid #ce0000;
+color:#fff
+}
+/* ===================================
+基本
+=================================== */
+#wrapper{
+background:#000;
+border:1px dotted #fff;
+margin:10px auto;
+padding:20px;
+text-align:left;
+ 
+ width:450px /* 全体の幅・大きさはここで変更 */
