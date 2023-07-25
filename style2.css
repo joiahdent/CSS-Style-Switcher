@@ -1,0 +1,329 @@
+*{margin:0;padding:0}
+div,h1,h2,h3,p,ul,li,input,textarea,table,tr,th,td,footer,header,nav{box-sizing:border-box}
+input,textarea,select{font-family:inherit;font-size:inherit;color:inherit}
+a{text-decoration:none}
+a img{border-style:none}
+ul,li{list-style-type:none}
+
+html{
+font-size:62.5%
+}
+body{
+background:#466142;/* 背景 */
+color:#433938;/* 文字色 */
+font-size:14px;/* 文字の大きさ */
+font-family:'Nunito', sans-serif;
+letter-spacing:.1em;
+line-height:1.5;
+padding:20px;
+text-align:center;
+overflow-y:scroll;
+overflow-wrap:break-word;
+word-wrap:break-word
+}
+a{
+color:#c1dbda
+}
+a:hover{
+color:#0cc
+}
+/*--------------------------------------------------------
+基本
+--------------------------------------------------------*/
+#wrapper{
+background:#1d2c1b; /* 背景色 */
+border:1px dashed #9bab99;
+box-shadow:0 0 0 4px #1d2c1b;
+color:#bcc8ba;
+padding:20px;
+margin:0 auto;
+text-align:left;
+width:500px /* 大きさはここを変更 */
+}
+/*--------------------------------------------------------
+上(ヘッダー)
+--------------------------------------------------------*/
+header a{
+color:#8c8673
+}
+.header-inner{
+padding:0 0 10px 0;
+text-align:right
+}
+/*--------------------------------------------------------
+メニュー
+--------------------------------------------------------*/
+#menu{
+border-top:1px dotted #8c8673;
+border-bottom:1px dotted #8c8673;
+line-height:1;
+width:100%;
+margin:10px auto;
+text-align:center
+}
+nav li{
+border-left:1px dotted #8c8673;
+display:inline-block; /* 横並び */
+position:relative; /* サブメニュー表示位置の基準 */
+height:2em;line-height:2em; /* メニュー高さ */
+}
+nav li a,nav li span{
+color:#9bab99;
+display:block;
+font-weight:700;
+padding:0 10px;
+text-decoration:none
+}
+nav li:first-child,.sub-menu li{
+border-left:0
+}
+/* サブメニュー */
+.sub-menu{
+background:rgba(254,238,74,.8);
+position:absolute;
+left:0;
+width:180px; /* サブメニュー幅 */
+z-index:20
+}
+.sub-menu li{
+border-left:0;
+display:block; /* 横並びをリセット */
+visibility:hidden;
+overflow:hidden;
+margin:0;
+height:0;
+width:100%
+}
+.sub-menu li a{
+color:#433938
+}
+.sub-menu li a:hover{
+background:rgba(193,219,218,.8)
+}
+nav li:hover .sub-menu li{
+visibility:visible;
+overflow:visible;
+height:2em;line-height:2em; /* サブメニュー高さ ※固定しないならheight:autoでOK */
+transition: .5s
+}
+#open{display:none}
+/*--------------------------------------------------------
+メイン
+--------------------------------------------------------*/
+#contents{
+padding:10px 0 20px
+}
+#contents a{
+display:inline-block
+}
+#contents a:hover{
+background:#d6f0b5;
+border-radius:5px;
+color:#8c8673;
+transition:.6s
+}
+#contents a img{
+vertical-align:bottom
+}
+/*--------------------------------------------------------
+下(フッター)
+--------------------------------------------------------*/
+footer{
+text-align:right	
+}
+.footer-inner{
+border-top:1px dotted #8c8673;
+border-bottom:1px dotted #8c8673;
+padding:2px 0 2px 10px;
+text-align:right;
+width:100%
+}
+/*--------------------------------------------------------
+ページ上部へのリンク、著作権表示
+--------------------------------------------------------*/
+#pagetop {/* 位置はscroll.jsで設定 */
+background:rgba(44,38,37,.8);/* 背景 */
+color:#fff;/* 色 */
+border-radius:10px;
+display:block;
+padding:10px;
+position:fixed;
+text-align:center;
+text-decoration:none;
+z-index:10
+}
+#pagetop:hover {
+background:rgba(0,0,0,.8)
+}
+#fl a{
+display:inline-block;
+margin:10px 0
+}
+/*--------------------------------------------------------
+見出し、枠、線
+--------------------------------------------------------*/
+h1{
+color:#9bab99;
+font-size:1.1em;
+font-family: 'Carter One', cursive;
+margin:0.5em 0;
+}
+h2{
+border-bottom:3px double;
+font-size:1em;
+padding:.5em .2em;
+margin:20px 0
+}
+h2::first-letter{
+color:#fed49a;
+font-size:1.5em;
+margin-right:.1em
+}
+h3{
+border-bottom:1px dotted;
+color:#c1dbda;
+font-size:1em;
+font-weight:400;
+margin:20px 0;
+padding:.2em
+}
+dt{
+color:#bd3033;
+font-weight:700;
+float:left;
+clear:both;
+margin:0 0 5px;
+width:140px
+}
+dd{
+margin:0 0 5px 140px
+}
+em{
+font-weight:700
+}
+input,textarea{
+background:#d3d1c9;
+border:none;
+color:#433938;
+margin:3px 0;
+width:200px
+}
+textarea{
+height:50px
+}
+hr{
+display:block;
+border:0;  
+border-top:1px solid #ccc;
+margin:1em 0;
+padding:0;
+height:1px
+}
+.marker{
+background:#d8ca46;
+color:#433938;
+padding:1px 3px
+}
+.dcline{
+border-left:8px solid #c90;
+margin:5px 0;
+padding:3px
+}
+.textbox{
+border:1px dotted;
+font-size:0.9em;
+padding-left:1em;
+text-align:center
+}
+.title{
+color:#ccc;
+font-size:1.5em;
+font-weight:700;
+margin:2em 0;
+text-align:right
+}
+.txt{
+border-left:1px solid;
+margin:1em;
+padding:0 0 0 1em
+}
+.frame{
+background:#d3d1c9;
+border-radius:3px;
+padding:6px;
+box-shadow:3px 3px 3px #2c2625
+}
+/*--------------------------------------------------------
+スマホ、タブレット用
+横幅600pxで切り替え
+--------------------------------------------------------*/
+@media screen and (max-width: 600px){
+body{
+font-size:1.4em;
+padding:20px 20px 70px
+}
+header{
+position:relative
+}
+#wrapper{
+padding:10px;
+width:100%
+}
+.footer-inner{
+padding:10px 0
+}
+/* 画像の縮小表示 */
+img{
+max-width:100%;
+height:auto
+}
+dt{float:none;clear:none;width:auto}
+dd{margin-left:20px}
+/*--------------------------------------------------------
+スマホ、タブレット用メニュー
+--------------------------------------------------------*/
+}
+
+.scroll {
+            display: block;
+            border: 0px solid red;
+            padding: 5px;
+            margin-top: 5px;
+            width: 100%;
+            height: 700px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+  }
+  .scroll2 {
+            display: block;
+            border: 1px dashed #8c8673;
+            padding: 5px;
+            margin: auto;
+            width: 100%;
+            height: 75px;
+            overflow-y: scroll;
+            overflow-x: hidden;
+          
+          
+  }
+
+  .pagetop {
+  background-color: black;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 48px;
+  width: 30px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  text-align: center;
+  }
+
+  .responsive {
+  width: 100%;
+  height: auto;
+  border: 1px solid #8c8673;
+}
+
