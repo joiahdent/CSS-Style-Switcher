@@ -48,3 +48,45 @@ padding:20px;
 text-align:left;
  
  width:450px /* 全体の幅・大きさはここで変更 */
+ }
+footer{
+border-top:1px dotted;
+padding:15px 0 0 80px;
+position:relative;
+text-align:right
+}
+/* ===================================
+メニュー
+=================================== */
+#menu{
+border-bottom:1px dotted #fff;
+border-top:1px dotted #fff;
+margin:10px 0;
+padding:3px;
+text-align:center;
+width:100%
+}
+nav li{
+display:inline-block
+}
+nav li a{
+color:#fff;
+line-height:2em;
+padding:0 5px
+}
+nav li a:hover{
+color:#ce0000
+}
+#open{display:none}
+/* ===================================
+ページ上部へのリンク
+=================================== */
+#pagetop{ background:rgba(206,0,0,.8);/* 背景 */
+color:#fff;/* 色 */ display:inline-block; padding:5px; position:absolute; text-align:center; top:10px;left:0; z-index:10
+}
+#pagetop:hover{
+background:rgba(206,0,0,.8)
+}
+/* ===================================
+見出し、枠、線
+=================================== */
